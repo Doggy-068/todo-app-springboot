@@ -39,8 +39,9 @@ public class TodoService {
         if (todoRepository.existsById(id)) {
             TodoEntity todoEntity = new TodoEntity(id, todoPutDto.name(), todoPutDto.isComplete());
             return entity2ReturnDto(todoRepository.save(todoEntity));
+        } else {
+            throw new NoSuchElementException();
         }
-        throw new NoSuchElementException();
     }
 
     public TodoReturnDto patchTodoWithId(Long id, TodoPatchDto todoPatchDto) {
@@ -52,15 +53,17 @@ public class TodoService {
                     todoPatchDto.isComplete() == null ? oldEntity.isComplete : todoPatchDto.isComplete()
             );
             return entity2ReturnDto(todoRepository.save(newEntity));
+        } else {
+            throw new NoSuchElementException();
         }
-        throw new NoSuchElementException();
     }
 
     public void deleteTodoById(Long id) {
         if (todoRepository.existsById(id)) {
             todoRepository.deleteById(id);
+        } else {
+            throw new NoSuchElementException();
         }
-        throw new NoSuchElementException();
     }
 
 }
