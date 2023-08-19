@@ -1,0 +1,86 @@
+= Todo
+:toc: left
+
+== getTodos
+
+.http-request
+include::{snippets}/todo-get/http-request.adoc[]
+
+.http-response
+include::{snippets}/todo-get/http-response.adoc[]
+
+.response-fields
+include::{snippets}/todo-get/response-fields.adoc[]
+
+== getTodoById
+
+.http-request
+include::{snippets}/todo-get-by-id/http-request.adoc[]
+
+.path-parameters
+include::{snippets}/todo-get-by-id/path-parameters.adoc[]
+
+.http-response
+include::{snippets}/todo-get-by-id/http-response.adoc[]
+
+.response-fields
+include::{snippets}/todo-get-by-id/response-fields.adoc[]
+
+== postTodo
+
+.http-request
+include::{snippets}/todo-post/http-request.adoc[]
+
+.request-fields
+include::{snippets}/todo-post/request-fields.adoc[]
+
+.http-response
+include::{snippets}/todo-post/http-response.adoc[]
+
+.response-fields
+include::{snippets}/todo-post/response-fields.adoc[]
+
+== putTodoWithId
+
+.http-request
+include::{snippets}/todo-put-with-id/http-request.adoc[]
+
+.path-parameters
+include::{snippets}/todo-put-with-id/path-parameters.adoc[]
+
+.request-fields
+include::{snippets}/todo-put-with-id/request-fields.adoc[]
+
+.http-response
+include::{snippets}/todo-put-with-id/http-response.adoc[]
+
+.response-fields
+include::{snippets}/todo-put-with-id/response-fields.adoc[]
+
+== patchTodoWithId
+
+.http-request
+include::{snippets}/todo-patch-with-id/http-request.adoc[]
+
+.path-parameters
+include::{snippets}/todo-patch-with-id/path-parameters.adoc[]
+
+.request-fields
+include::{snippets}/todo-patch-with-id/request-fields.adoc[]
+
+.http-response
+include::{snippets}/todo-patch-with-id/http-response.adoc[]
+
+.response-fields
+include::{snippets}/todo-patch-with-id/response-fields.adoc[]
+
+== deleteTodoById
+
+.http-request
+include::{snippets}/todo-delete-by-id/http-request.adoc[]
+
+.path-parameters
+include::{snippets}/todo-delete-by-id/path-parameters.adoc[]
+
+.http-response
+include::{snippets}/todo-delete-by-id/http-response.adoc[]
